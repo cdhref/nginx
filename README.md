@@ -11,7 +11,7 @@
 
 > 인증서 생성
 
-  # 다음 command 실행 시 출력되는 fullchain.pem, privkey.pem 파일 경로 기록 해 두기
+  '#' 다음 command 실행 시 출력되는 fullchain.pem, privkey.pem 파일 경로 기록 해 두기
   sudo certbot certonly --webroot -w . -d your_domain.com
 
 > 인증서 자동갱신 설정
