@@ -1,4 +1,4 @@
-# nginx setting
+# nginx setting, 무료 ssl설정
 ## linux ubuntu 18.04
 
 > nginx설치  
