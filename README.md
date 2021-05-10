@@ -17,7 +17,7 @@
 > 인증서 자동갱신 설정
  
   sudo vi /etc/crontab 
-  # 파일에 다음 내용을 추가
+  #파일에 다음 내용을 추가
   0 0 1 * * /usr/bin/certbot renew --renew-hook=service nginx restart
 
 > nginx 설정 파일 작성
