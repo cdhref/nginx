@@ -22,7 +22,7 @@
 
 > nginx 설정 파일 작성
 
-    sudo cd /etc/nginx/sites-available
+    cd /etc/nginx/sites-available
     sudo touch [file_name]
     sudo vi file_name
   
