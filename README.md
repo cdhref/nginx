@@ -16,7 +16,7 @@
     sudo rm /etc/nginx/sites-enabled/*
     cd /etc/nginx/sites-available/
     sudo touch [설정파일명]
-    sudo ln -s [설정파일명] /etc/nginx/sites-enabled/[설정파일명]
+    sudo ln -s /etc/nginx/sites-available/[설정파일명] /etc/nginx/sites-enabled/[설정파일명]
     sudo vi [설정파일명]
     
 > vi를 통해 열린 설정 파일에 다음 설정 값 입력
