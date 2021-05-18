@@ -4,6 +4,10 @@
 프로젝트 배포 후 index 파일이 존재하는 경로 메모.
 이하 배포경로라 칭함
 
+> 시작 전 다음 커맨드 실행 !!
+
+    sudo apt update
+    
 > nginx설치  
 
     sudo apt install nginx
