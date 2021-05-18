@@ -1,9 +1,39 @@
 # nginx setting, 무료 ssl설정
 ## linux ubuntu 18.04
 
+프로젝트 배포 후 index 파일이 존재하는 경로 메모.
+이하 배포경로라 칭함
+
 > nginx설치  
 
     sudo apt install nginx
+
+> Let’s Encrypt발급용 기본 사이트 설치
+
+    sudo cp /etc/nginx/sites-available /etc/nginx/sites-available-bak
+    sudo cp /etc/nginx/sites-available /etc/nginx/sites-enabled-bak
+    sudo rm /etc/nginx/sites-available/*
+    sudo rm /etc/nginx/sites-enabled/*
+    cd /etc/nginx/sites-available/
+    sudo touch [설정파일명]
+    sudo ln -s [설정파일명] /etc/nginx/sites-enabled/[설정파일명]
+    sudo vi [설정파일명]
+    
+> vi를 통해 열린 설정 파일에 다음 설정 값 입력
+
+    server {
+        listen 80;
+        location / {
+            root   [배포경로];
+            index  index.html index.htm;
+            try_files $uri /index.html;
+        }
+    }
+
+> nginx start
+
+    sudo service nginx stop
+    sudo service nginx start
 
 > Let’s Encrypt 설치
 
