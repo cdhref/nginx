@@ -57,10 +57,10 @@
 > nginx 설정 파일 작성
 
     cd /etc/nginx/sites-available
-    sudo touch [file_name]
-    sudo vi file_name
+    sudo touch [설정파일명]
+    sudo vi [설정파일명]
   
-> [file_name]파일의 내용 작성
+> [설정파일명]파일의 내용 작성
  
     server {
       listen 80 default_server;
@@ -81,10 +81,6 @@
       }
     }
   
-> nginx service 등록
- 
-    sudo ln -s /etc/nginx/sites-available/file_name /etc/nginx/sites-enabled/file_name
-
 > nginx service 시작
  
     sudo service nginx stop
