@@ -10,8 +10,8 @@
 
 > Let’s Encrypt발급용 기본 사이트 설치
 
-    sudo cp /etc/nginx/sites-available /etc/nginx/sites-available-bak
-    sudo cp /etc/nginx/sites-available /etc/nginx/sites-enabled-bak
+    sudo cp /etc/nginx/sites-available /etc/nginx/sites-available-bak -r
+    sudo cp /etc/nginx/sites-available /etc/nginx/sites-enabled-bak -r
     sudo rm /etc/nginx/sites-available/*
     sudo rm /etc/nginx/sites-enabled/*
     cd /etc/nginx/sites-available/
